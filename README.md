@@ -54,9 +54,12 @@ The implementation of this feature was pretty straightforward:
 * Detect the presence of a face using [MediaPipe's face detector](https://google.github.io/mediapipe/solutions/face_detection.html).
 * If a face is not detected for at least a prefined number of consecutives frames, then the user is considered to be absent.  
 
-The general workflow for the sleepness and absence detection looks like this:  
+The sleepness and absence detection looks like this:  
+<img width="923" height="446" alt="image" src="https://github.com/user-attachments/assets/55377e65-af8d-40d3-a27e-fa42add12aa8" />
 
-<img src="https://user-images.githubusercontent.com/100664869/194755008-74282aa3-01a1-4ea3-8563-a1777278e752.png">  
+
+
+
 
 ## Project Structure
 ```bash
@@ -137,9 +140,12 @@ Both the youtube video and your webcam video will load into the web page.
 Hand gestures are valid only when your hand is in the red box within your webcam video. This is to prevent unintentional interactions with the player (e.g. when scratching your face). You first need to move the mouse above the player and left-click to start the video; of course with hand gestures 😉. This puts the player in focus mode and allows the rest of interactions to be performed.  
 It's better to use the 'neutral' gesture between other gestures; this decreases false positive detections that might occur when transitioning directly from one gesture to another.
 
-<img src="https://user-images.githubusercontent.com/100664869/194749265-5bd27c59-a248-440e-8702-5a442b83472b.gif">
+<img width="604" height="286" alt="image" src="https://github.com/user-attachments/assets/8a6fc138-1aa5-47c8-a907-9a3ae6d0f743" />
+
 Here is a list of all the implemented interactions.  
-<img src="https://user-images.githubusercontent.com/100664869/194752626-125f0a5f-fca2-4a04-aefb-bf07679fe0a7.png">  
+<img width="547" height="335" alt="image" src="https://github.com/user-attachments/assets/92eac443-a64a-4ebf-a56f-59607584f652" />
+
+
 
 ___Legend___:
 | Move mouse | Left click | right click | Play/Pause | Backward |
@@ -163,6 +169,4 @@ Please, let me know if you face other issues or have any question. All feedbacks
 ## References
 * [MediaPipe](https://google.github.io/mediapipe/)
 * [Dlib](http://dlib.net/)
-* [Nikita Kiselov](https://github.com/kinivi)
-* [Adrian Rosebrock](https://pyimagesearch.com/author/adrian/)
-* [Artificial Intelligence in Gestural Interfaces](https://emerj.com/ai-sector-overviews/artificial-intelligence-in-gestural-interfaces/)
+
